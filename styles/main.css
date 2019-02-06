@@ -1,0 +1,451 @@
+*{
+    /* Universal reset: */
+    margin:0;
+    padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+    /* Giving a display value to the HTML5 rendered elements: */
+    display:block;
+}
+
+html {
+    background-image:url("../images/illdan.gif");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+body{
+    /* Setting the default text color, size, page background and a font stack: */
+    font-size:82.5%;
+    color:#fcfcfc;
+    margin: 0 auto;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    width: 99%;
+    max-width: 2600px;
+}
+
+body img {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;  
+    display: block;
+}
+
+body section article div p {
+    text-align: justify;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+    align-content: center;
+    border: 2px solid #c77e19;
+    color:#f8b700;
+    /* color:#0196e3; */
+    text-decoration:none;
+    outline:none;
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+article figure a {
+    border:none;
+}
+
+/* Headings: */
+
+h2,h3{
+    font-family:Algerian,Arial,Sans-Serif;
+    text-shadow:0 1px 1px black;
+}
+#up1, #up2, #up3, #up4 {
+    font-size: 1em;
+}
+
+h1{
+    /* The logo text */
+    margin:0 0.67em;
+    font-size:350%;
+    padding:0.25em 0 0;
+    text-transform:uppercase;
+    text-align: center;
+    color:#f8b700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(top,#efd100 0,#e2a233 38%,#f0c328 60%,#fff1a3 86%,#ffe13e 100%);
+    background-size: 1em 1em;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.00px;   
+}
+
+h3{
+    /* The slogan text */
+    font-family:"Old English Text MT",Sans-Serif;
+    text-align:center;
+    font-size:190%;
+    font-weight:normal;
+    margin:0 0 3.0em;
+    -webkit-text-stroke-color: #3e516b;
+    -webkit-text-stroke-width: 1.00px;
+    position: relative;
+}
+
+h2{
+    font-size:220%;
+    font-weight:normal;
+    letter-spacing:0.01em;
+    text-transform:uppercase;
+
+}
+.go_up {
+    float: right; 
+    padding-right: 15px;  
+}
+p{
+    line-height:1.5em;
+    padding-bottom:1em;
+}
+.pbold{
+    font-size:120%;
+    font-weight:bold;
+    letter-spacing:0.01em;
+    text-transform:uppercase;
+}
+
+.line{
+    /* The dividing line: */
+    height:1px;
+    background-color:#c77e19;
+    border-bottom:1px solid #211510;
+    margin:1em 0;
+    overflow:hidden;
+}
+
+article .line{
+    /* The dividing line inside of the article is darker: */
+    background-color:#211510;
+    border-bottom-color:#c77e19;
+    margin:1.3em 0;
+}
+
+footer .line{
+    margin:2em 0;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0 0;
+    padding: 0 0;
+    position: relative;
+
+    background: #19212c;
+    
+
+
+
+    border:1px solid #211510;
+    -moz-box-shadow:0 1px 1px #c77e19;
+    -webkit-box-shadow:0 1px 1px #c77e19;
+    box-shadow:0 1px 1px #c77e19;
+}
+
+#nav_menu ul li {
+    float: left; 
+    width: 25%; 
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0.25em;
+    margin: auto 1.25em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav_menu ul ul {
+    width: 25%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #19212c;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+
+#special  {
+    padding-top: 1.08em !important;
+    padding-bottom: 1.08em !important; 
+}
+
+#special2 {
+    text-align: center;
+}
+
+
+#nav_menu ul ul li a {
+
+    border: none;
+    text-align: center;
+    margin: 0 1.0em;
+    padding-left:  0.5em;
+    padding-right: 0.5em;
+}
+
+#nav_menu ul li:hover > ul  {
+    display: block;
+}
+#nav_menu ul li:hover> a
+{
+    background: #c77e19;   
+
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+    display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+
+    display:block;
+    float:left;
+    font-size:100%;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-transform:uppercase;
+    color:#f8b700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(top,#efd100 0,#e2a233 38%,#f0c328 60%,#fff1a3 86%,#ffe13e 100%);
+    background-size: 1em 1em;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+    position: relative;
+}
+
+nav ul li a:hover{
+    text-decoration:none;
+    background-image: -webkit-linear-gradient(top,#fff 0,#fff 100%);
+    color: #fff;
+}
+
+article h2 a:hover {
+    text-decoration: none;
+    background-color:#c77e19;
+}
+
+article h2 a i {
+    font-size: 36px;
+}
+nav, article, nav ul li a,figure{
+    /* Applying CSS3 rounded corners: */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+    width:55.375%;
+    margin:0 auto;
+    position:relative;
+}
+
+body section ol li a{
+    border: none;
+    font-size: normal;
+}
+article{
+    background-color:#19212c;
+    margin:3em 0;
+    padding:20px;
+
+    text-shadow:0 2px 0 black;
+}
+
+figure{
+    border:3px solid #211510;
+    float:right;
+    height:250px;
+    margin-left:15px;
+    overflow:hidden;
+    width:500px;
+}
+
+figure:hover{
+    -moz-box-shadow:0 0 2px #c77e19;
+    -webkit-box-shadow:0 0 2px #c77e19;
+    box-shadow:0 0 2px #c77e19;
+}
+
+/* Footer styling: */
+
+footer{
+    margin-bottom:30px;
+    text-align:center;
+    font-size:82.5%;
+}
+
+#follow {
+    font-size: 2em;
+}
+footer p{
+    margin-bottom:-2.5em;
+    position:relative;
+}
+
+footer a,footer a:visited{
+    color:#cccccc;
+    background-color:#19212c;
+    display:block;
+    padding:2px 4px;
+    z-index:100;
+    position:relative;
+}
+
+footer a:hover{
+    text-decoration:none;
+    background-color:#c77e19;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width:1980px)
+{
+    #nav_menu {
+        display: block;
+        font-size: 80%;
+        
+    }
+    body {
+        width: 90%;
+        font-size: 120%;
+    }
+    #page {
+        width: 90%;
+    }
+    body image{
+        width: 110%;
+        height: 110%%;
+
+        align-content: center;
+        
+    }
+    figure
+    {
+        width: 93%;
+    }
+    h1 {
+        font-size: 230%;
+    }
+
+}
+
+@media only screen and (max-width:1024px)
+{
+    #nav_menu {      
+        font-size: 80%;
+    }
+    figure, body image{
+        width: 92%;
+        height: 80%;
+
+    }
+    #page {
+        width: 95%;
+    }
+    body {
+        width: 100%;
+        font-size: 120%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h3 {
+        font-size: 120%;
+    }
+    #nav_menu {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width:480px) 
+{
+
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #19212c !important;
+
+    }
+    nav ul li a {
+        float: none;
+    }
+    body {
+        width:100%;
+        font-size: 80%;
+    }
+    #page {
+        width: 100%;
+    }
+    h3 {
+        font-size: 120%;
+    }
+    h2, h2 a {
+        font-size: 120% !important;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    figure, body img{
+        width: 82%;
+        height: 100%;
+    }
+    #up1, #up2, #up3, #up4 {
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
+    #follow {
+        font-size: 1em;
+    }
+}
